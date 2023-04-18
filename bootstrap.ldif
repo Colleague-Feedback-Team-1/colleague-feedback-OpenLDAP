@@ -26,143 +26,81 @@ gidNumber: 30000
 dn: cn=users,ou=Groups,dc=employeesdb,dc=com
 changetype: modify
 add: memberUid
-memberUid: john
-memberUid: jason
-memberUid: suh
-memberUid: eyvaz
-memberUid: nikita
+memberUid: lucas
+memberUid: alex
+
 
 dn: cn=hr,ou=Groups,dc=employeesdb,dc=com
 changetype: modify
 add: memberUid
 memberUid: essi
+memberUid: ilya
 
 dn: cn=manager,ou=Groups,dc=employeesdb,dc=com
 changetype: modify
 add: memberUid
-memberUid: jane
+memberUid: mark
 memberUid: james
 
 
-dn: uid=john,ou=People,dc=employeesdb,dc=com
+dn: uid=lucas,ou=People,dc=employeesdb,dc=com
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
-uid: john
-sn: Doe
-givenName: John
-cn: John Doe
-displayName: John Doe
+uid: lucas
+sn: Smith
+givenName: Lucas
+cn: Lucas Smith
+displayName: lucas smith
 uidNumber: 10000
 gidNumber: 10000
-userPassword: johnldap
-gecos: John Doe
+userPassword: secret2
+gecos: Lucas Smith
 loginShell: /bin/bash
-homeDirectory: /home/ldap/john
-mail: johndoe@employeesdb.com
+homeDirectory: /home/ldap/lucas
+mail: lucassmith@employeesdb.com
 description: user
-jpegPhoto:< file:///home/ldap/john/profile.jpg
+jpegPhoto:< file:///home/ldap/lucas/profile.jpg
 
 
-dn: uid=jason,ou=People,dc=employeesdb,dc=com
+dn: uid=alex,ou=People,dc=employeesdb,dc=com
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
-uid: jason
-sn: Dansie
-givenName: Jason
-cn: Jason Dansie
-displayName: Jason Dansie
+uid: alex
+sn: Doe
+givenName: Alex
+cn: Alex Otulugbu
+displayName: Alex Otulugbu
 uidNumber: 10001
 gidNumber: 10000
-userPassword: Passwd123
-gecos: Jason Dansie
+userPassword: secret1
+gecos: Alex Otulugbu
 loginShell: /bin/bash
-homeDirectory: /home/ldap/jason
-mail: jasondansie@employeesdb.com
+homeDirectory: /home/ldap/alex
+mail: alexotulugbu@employeesdb.com
 description: user
-jpegPhoto:< file:///home/ldap/jason/profile.jpg
+jpegPhoto:< file:///home/ldap/alex/profile.jpg
 
 
-dn: uid=suh,ou=People,dc=employeesdb,dc=com
+dn: uid=mark,ou=People,dc=employeesdb,dc=com
 objectClass: inetOrgPerson
 objectClass: posixAccount
 objectClass: shadowAccount
-uid: suh
-sn: Fuh
-givenName: Suh
-cn: Suh Fuh
-displayName: Suh Fuh
+uid: mark
+sn: Mark
+givenName: Mark
+cn: Mark Upton
+displayName: Mark Upton
 uidNumber: 10002
-gidNumber: 10000
-userPassword: Passwd123
-gecos: Suh Fuh
-loginShell: /bin/bash
-homeDirectory: /home/ldap/Suh
-mail: suhfuh@employeesdb.com
-description: user
-jpegPhoto:< file:///home/ldap/suh/profile.jpg
-
-
-dn: uid=eyvaz,ou=People,dc=employeesdb,dc=com
-objectClass: inetOrgPerson
-objectClass: posixAccount
-objectClass: shadowAccount
-uid: eyvaz
-sn: Alishov
-givenName: Eyvaz
-cn: Eyvaz Alishov
-displayName: Eyvaz Alishov
-uidNumber: 10003
-gidNumber: 10000
-userPassword: Passwd123
-gecos: eyvaz Alishov
-loginShell: /bin/bash
-homeDirectory: /home/ldap/eyvaz
-mail: eyvazalishov@employeesdb.com
-description: user
-jpegPhoto:< file:///home/ldap/eyvaz/profile.jpg
-
-
-dn: uid=jane,ou=People,dc=employeesdb,dc=com
-objectClass: inetOrgPerson
-objectClass: posixAccount
-objectClass: shadowAccount
-uid: jane
-sn: Doe
-givenName: Jane
-cn: Jane Doe
-displayName: Jane Doe
-uidNumber: 10004
 gidNumber: 30000
-userPassword: Passwd123
-gecos: Jane Doe
+userPassword: secret2
+gecos: Mark Upton
 loginShell: /bin/bash
-homeDirectory: /home/ldap/Jane
-mail: janedoe@employeesdb.com
+homeDirectory: /home/ldap/Mark
+mail: markupton@employeesdb.com
 description: Manager
-jpegPhoto:< file:///home/ldap/jane/profile.jpg
-
-
-dn: uid=nikita,ou=People,dc=employeesdb,dc=com
-objectClass: inetOrgPerson
-objectClass: posixAccount
-objectClass: shadowAccount
-uid: nikita
-sn: Lyudikaynen
-givenName: Nikita
-cn: Nikita Lyudikaynen
-displayName: Nikita Lyudikaynen
-uidNumber: 10005
-gidNumber: 10000
-userPassword: Passwd123
-gecos: Nikita Lyudikaynen
-loginShell: /bin/bash
-homeDirectory: /home/ldap/Nikita
-mail: nikitalyudikaynen@employeesdb.com
-description: user
-jpegPhoto:< file:///home/ldap/nikita/profile.jpg
-
+jpegPhoto:< file:///home/ldap/mark/profile.jpg
 
 dn: uid=essi,ou=People,dc=employeesdb,dc=com
 objectClass: inetOrgPerson
@@ -173,15 +111,34 @@ sn: Salomaa
 givenName: Essi
 cn: Essi Salomaa
 displayName: Essi Salomaa
-uidNumber: 10006
+uidNumber: 10003
 gidNumber: 20000
-userPassword: Passwd123
+userPassword: secret3
 gecos: Essi Salomaa
 loginShell: /bin/bash
 homeDirectory: /home/ldap/essi
 mail: essisalomaa@employeesdb.com
 description: HR
 jpegPhoto:< file:///home/ldap/essi/profile.jpg
+
+dn: uid=ilya,ou=People,dc=employeesdb,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: ilya
+sn: Ponomarenko
+givenName: Ilya
+cn: Ilya Ponomarenko
+displayName: Ilya Ponomarenko
+uidNumber: 10004
+gidNumber: 20000
+userPassword: secret3
+gecos: Ilya Ponomarenko
+loginShell: /bin/bash
+homeDirectory: /home/ldap/ilya
+mail: ilyaponomarenko@employeesdb.com
+description: HR
+jpegPhoto:< file:///home/ldap/ilya/profile.jpg
 
 
 dn: uid=james,ou=People,dc=employeesdb,dc=com
@@ -193,9 +150,9 @@ sn: Narraway
 givenName: James
 cn: James Narraway
 displayName: James Narraway
-uidNumber: 10007
+uidNumber: 10005
 gidNumber: 30000
-userPassword: Passwd123
+userPassword: secret4
 gecos: James Narraway
 loginShell: /bin/bash
 homeDirectory: /home/ldap/james

@@ -35,6 +35,7 @@ changetype: modify
 add: memberUid
 memberUid: essi
 memberUid: ilya
+memberUid: dang
 
 dn: cn=manager,ou=Groups,dc=employeesdb,dc=com
 changetype: modify
@@ -120,6 +121,25 @@ homeDirectory: /home/ldap/essi
 mail: essisalomaa@employeesdb.com
 description: HR
 jpegPhoto:< file:///home/ldap/essi/profile.jpg
+
+dn: uid=dang,ou=People,dc=employeesdb,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: dang
+sn: Le
+givenName: Dang
+cn: Dang Le
+displayName: Dang Le
+uidNumber: 10006
+gidNumber: 20000
+userPassword: secret10
+gecos: Dang Le
+loginShell: /bin/bash
+homeDirectory: /home/ldap/dang
+mail: dangle@employeesdb.com
+description: HR
+jpegPhoto:< file:///home/ldap/dang/profile.jpg
 
 dn: uid=ilya,ou=People,dc=employeesdb,dc=com
 objectClass: inetOrgPerson
